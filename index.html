@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <div class="game-container">
-        <h1>Rock Paper Scissors</h1>
 
-        <div class="scoreboard">
-            <div>
+<body>
+    <section class="game">
+        <!-- Title -->
+        <div class="title">Rock Paper Scissors</div>
+
+        <!-- Scoreboard -->
+        <div class="score">
+            <div class="playerScore">
                 <h2>Player</h2>
-                <div id="user-score" class="score">0</div>
+                <p class="p-count count">0</p>
             </div>
-            <div>
+            <div class="computerScore">
                 <h2>Computer</h2>
-                <div id="computer-score" class="score">0</div>
+                <p class="c-count count">0</p>
             </div>
         </div>
-        
-        <div id="result" class="result">Make your move!</div>
-        
-        <div class="choices">
-            <div id="rock" class="choice">
-                <img src="images/rock.png" alt="Rock">
-            </div>
-            <div id="paper" class="choice">
-                <img src="images/paper.png" alt="Paper">
-            </div>
-            <div id="scissors" class="choice">
-                <img src="file:///Users/jolasonowo/Downloads/scissors.png" alt="Scissors">
-            </div>
+
+        <!-- Game instructions -->
+        <div class="move">Choose your move</div>
+
+        <!-- Moves left -->
+        <div class="movesleft">Moves Left: 10</div>
+
+        <!-- Options -->
+        <div class="options">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissors</button>
         </div>
-                
-        <button id="restart-btn" class="restart-btn">Restart Game</button>
-    </div>
-    <script src="script.js"></script>
+
+        <!-- Result -->
+        <div class="result"></div>
+
+        <!-- Reload button -->
+        <button class="reload">Play Again</button>
+    </section>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
